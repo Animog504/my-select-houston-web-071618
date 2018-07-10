@@ -2,7 +2,7 @@ def my_select(collection)
  # your code here!
  if block_given?
    i = 0 #iterator
-   count = 0 
+   count = 0 # secondary iterator for temp[]
    temp = []
    
    while i<collection.length 
