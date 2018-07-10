@@ -8,8 +8,9 @@ def my_select(collection)
     bool = yield(collection[i])
     if bool
       temp[i] =  collection[i]
+      i+=1
     end
-    i+=1
+   
    end
    temp
  else
