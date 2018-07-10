@@ -2,15 +2,16 @@ def my_select(collection)
  # your code here!
  if block_given?
    i = 0 #iterator
+   count = 0 
    temp = []
    
    while i<collection.length 
     bool = yield(collection[i])
     if bool
-      temp[i] =  collection[i]
-      i+=1
+      temp[count] =  collection[i]
+      count += 1 
     end
-   
+    i+=1
    end
    temp
  else
