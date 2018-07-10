@@ -5,8 +5,7 @@ def my_select(collection)
    temp = []
    
    while i<collection.length 
-    yield
-    temp[i] = collection[i]
+    temp[i] =  yield(collection[i])
     i+=1
    end
    temp
